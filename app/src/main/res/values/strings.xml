@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Mis Series App</string>
+    <string name="register_form">Formulario de Registro</string>
+    <string name="name">Nombre</string>
+    <string name="email">Correo electrónico</string>
+    <string name="required_field">*Campo obligatorio</string>
+    <string name="password">Contraseña</string>
+    <string name="rep_password">Repita la contraseña</string>
+    <string name="register">Registrar</string>
+    <string name="info">info</string>
+    <string name="female">Femenino</string>
+    <string name="male">Masculino</string>
+    <string name="action">Accion</string>
+    <string name="adventure">Aventura</string>
+    <string name="comic">humor</string>
+    <string name="love">Romantica</string>
+    <string name="suspense">Suspenso</string>
+    <string name="horror">Terror</string>
+    <string name="genre_favorites">Géneros favoritos</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>
