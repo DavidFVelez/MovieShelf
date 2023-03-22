@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MovieShelf</string>
+    <string name="register_form">Registration Form</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="required_field">*Obligatory field</string>
+    <string name="password">Password</string>
+    <string name="rep_password">Repeat password</string>
+    <string name="register">to register</string>
+    <string name="info">info</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="action">Action</string>
+    <string name="adventure">Adventure</string>
+    <string name="comic">humor</string>
+    <string name="love">Romantic</string>
+    <string name="suspense">Suspense</string>
+    <string name="horror">Terror</string>
+    <string name="date_of_birth">Date of birth </string>
+    <string name="place_of_birth">Place of birth </string>
+    <string name="genre_favorites">Favorite genres</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="genre">Gender</string>
+
+
+    <string-array name="city_list">
+        <item>Select</item>
+        <item>Medellín</item>
+        <item>Barranquilla</item>
+        <item>Pereira</item>
+        <item>Cúcuta</item>
+        <item>Cartagena</item>
+
+    </string-array>
+
+</resources>

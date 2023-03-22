@@ -17,6 +17,8 @@
     <string name="suspense">Suspenso</string>
     <string name="horror">Terror</string>
     <string name="genre_favorites">Géneros favoritos</string>
+    <string name="date_of_birth">Fecha de nacimiento</string>
+    <string name="place_of_birth">Lugar de nacimiento</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>

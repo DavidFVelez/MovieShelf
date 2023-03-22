@@ -221,7 +221,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:ems="10"
-                android:hint="Fecha de nacimiento"
+                android:hint="@string/date_of_birth"
                 android:inputType="date" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -230,7 +230,7 @@
             android:id="@+id/lugar_nacimiento_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lugar de nacimiento"
+            android:text="@string/place_of_birth"
             android:layout_marginTop="8dp"
             android:textColor="#082E71" />
 
