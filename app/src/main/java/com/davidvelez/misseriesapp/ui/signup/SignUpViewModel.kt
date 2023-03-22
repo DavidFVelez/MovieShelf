@@ -1,7 +1,6 @@
 package com.davidvelez.misseriesapp.ui.signup
 
 import android.app.DatePickerDialog
-import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import java.text.SimpleDateFormat
@@ -9,9 +8,8 @@ import java.util.*
 
 class SignUpViewModel : ViewModel() {
 
-    val calOut: MutableLiveData<String> by lazy {
-        MutableLiveData<String>()
-    }
+
+    val currentDate = MutableLiveData<String>()
 
     val infoOut: MutableLiveData<String> by lazy {
         MutableLiveData<String>()
@@ -48,7 +46,6 @@ class SignUpViewModel : ViewModel() {
     val errorplaceOfBirthOut: MutableLiveData<String> by lazy {
         MutableLiveData<String>()
     }
-
 
     fun registerUser(
         name: String,
@@ -150,36 +147,28 @@ class SignUpViewModel : ViewModel() {
                 errorEmptyBirthDateOut.value = "on"
 
             }
-            if (placeOfBirth == "Seleccionar" || placeOfBirth == "Select" || placeOfBirth =="Selezionare") {
+            if (placeOfBirth == "Seleccionar" || placeOfBirth == "Select" || placeOfBirth == "Selezionare") {
                 errorplaceOfBirthOut.value = "on"
             }
 
         }
 
-
     }
 
-// fun spinnerDate(){
-//     var fechaNacimiento: String = ""
-//     var cal = Calendar.getInstance()
-//
-//     val calOut: MutableLiveData<Int> by lazy {
-//         MutableLiveData<Int>()
-//     }
-//
-//     val dateSetListener =
-//         DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
-//             cal.set(Calendar.YEAR, year)
-//             cal.set(Calendar.MONTH, month)
-//             cal.set(Calendar.DAY_OF_MONTH, dayOfMonth)
-//
-//             val format = "MM/dd/yyyy"
-//             val sdf = SimpleDateFormat(format, Locale.US)
-//             fechaNacimiento = sdf.format(cal.time).toString()
-//             signUpBinding.fechaNacimientoEditText.setText(fechaNacimiento)
-//         }
-//
-// }
+    fun dataSet(): DatePickerDialog.OnDateSetListener {
+        val dateSetListener = DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
+            val cal = Calendar.getInstance().apply {
+                set(Calendar.YEAR, year)
+                set(Calendar.MONTH, month)
+                set(Calendar.DAY_OF_MONTH, dayOfMonth)
+            }
+            val format = "MM/dd/yyyy"
+            val sdf = SimpleDateFormat(format, Locale.US)
+            val fechaNacimiento = sdf.format(cal.time).toString()
+            currentDate.value = fechaNacimiento
+        }
 
+        return dateSetListener
+    }
 
 }
