@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Mis Series App</string>
+    <string name="app_name">MovieShelf</string>
     <string name="register_form">Formulario de Registro</string>
     <string name="name">Nombre</string>
     <string name="email">Correo electrónico</string>
@@ -7,7 +7,7 @@
     <string name="password">Contraseña</string>
     <string name="rep_password">Repita la contraseña</string>
     <string name="register">Registrar</string>
-    <string name="info">info</string>
+    <string name="info">Info</string>
     <string name="female">Femenino</string>
     <string name="male">Masculino</string>
     <string name="action">Accion</string>
@@ -20,5 +20,17 @@
     <string name="title_activity_splash">SplashActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="genre">Género</string>
+
+
+    <string-array name="city_list">
+        <item>Seleccionar</item>
+        <item>Medellín</item>
+        <item>Barranquilla</item>
+        <item>Pereira</item>
+        <item>Cúcuta</item>
+        <item>Cartagena</item>
+
+    </string-array>
 
 </resources>
